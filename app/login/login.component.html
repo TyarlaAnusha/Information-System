@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form ngNativeValidate #userForm="ngForm" (ngSubmit)="userForm.form.valid && onSubmit(userForm)">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" class="form-control" [(ngModel)]="email" required>
+        </div>
+        <div class="form-group">
+          <label>Password <i style="font-size:small;">(Numbers Only)</i></label>
+          <input type="password" name="password" class="form-control" [(ngModel)]="password" minlength="4" maxlength="8"
+            pattern="^[0-9]+$" required>
+        </div>
+        <div class="form-group mt-2">
+          <button class="btn btn-danger btn-block">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <img src="../assets/img/login3.jpg">
+      </div>
+    </div>
+  </div>
+</div>

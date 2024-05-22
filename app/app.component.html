@@ -1,0 +1,112 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <div class="logo-image">
+        <img src="../assets/img/logoh.jpg" class="img-fluid">
+      </div>
+    </a>
+    <a class="navbar-brand" router link="#"><b>AGRIHITHA</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-collapse justify-content-center mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/organic">Organic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/inorganic">Inorganic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/support">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<!-- footer section starts here -->
+<section>
+  <div class="container-fluid bg-success text-light footer pt-5 mt-5">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Contact</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>AGRIHITHA</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>MEDAK</p>
+          <p class="mb-2"><i class="fa fa-envelope
+    me-3"></i>info@agrihitha.com</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""><i class="fa
+    fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fa
+    fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fa
+    fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fa
+    fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Gallery</h4>
+          <div class="row g-2 pt-2">
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="../assets/img/1.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="../assets/img/2.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="../assets/img/3.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="../assets/img/4.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="../assets/img/5.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="../assets/img/6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">any verification</h4>
+          <p>sign up for more uses.</p>
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+            <button type="button" class="btn btn-primary py-2 position-absolute
+        top-0 end-0 mt-2 me-2">SignUp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            © <strong><U>AGRIHITHA</U></strong>, All Right Reserved.
+            Designed By <strong><U>FERTIGROW</U></strong><br><br>
+            Distributed By <strong><U>TEAM AGRIHITHA</U></strong>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer ends here -->
